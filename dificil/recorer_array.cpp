@@ -2,10 +2,12 @@
 
 int main() {
 
-	std::string estudiantes[] = { "Maria", "Juan","Ana" };
+	std::string estudiantes[] = { "Maria", "Juan","Ana", "Santi", "Angel", "Roberto"};
 
-	for (int i = 0; i < 3;i++) {
-		std::cout << estudiantes[i];
+	int longitud = sizeof(estudiantes) / sizeof(std::string);
+
+	for (int i = 0; i < longitud;i++) {
+		std::cout << estudiantes[i] << "\n";
 	}
 
 	return 0;
